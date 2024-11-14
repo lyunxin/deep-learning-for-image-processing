@@ -1,3 +1,5 @@
+#主要目的是加载预训练的 ResNet34 模型权重，并根据实际需求对模型的全连接层（fc）进行调整，
+#使其适用于特定的分类任务（这里是将类别数调整为 5 类），最终准备好一个可用于后续训练、推理等操作的 ResNet34 模型实例。
 import os
 import torch
 import torch.nn as nn
